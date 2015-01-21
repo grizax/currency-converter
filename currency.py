@@ -1,6 +1,6 @@
 #!/bin/python
 
-rates = [("USD", "EUR", 0.86), ("EUR", "JPY", 136.28)]
+rates = [("USD", "EUR", 0.86), ("EUR", "JPY", 137.05)]
 
 
 def convert(rates, value, from_a, to_b):
@@ -14,4 +14,4 @@ def convert(rates, value, from_a, to_b):
         elput = new_list[0]
         new_rate = elput[2]
         new_value = new_rate * value
-        return new_value
+        return round(new_value, 2)
