@@ -14,3 +14,11 @@ def test_conversion():
 
 def test_converting_more():
     assert cy.convert(rates, 444, "EUR", "JPY") == 60850.2
+
+
+def test_convert_backwards():
+    assert cy.convert_backwards(rates, 323, "EUR", "USD") == 44267.15
+
+
+def test_convert_backwards():
+    assert cy.convert_backwards(rates, 500, "JPY", "EUR") == 581.4
